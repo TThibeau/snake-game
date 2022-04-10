@@ -1,0 +1,25 @@
+# Window
+WINDOW_HEIGHT = 600
+WINDOW_WIDTH = 600
+
+# Snake
+
+START_LENGTH = 5
+SNAKE_WIDTH = 20
+MOVE_DISTANCE = SNAKE_WIDTH
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
+# Food
+min_x = round((-WINDOW_WIDTH/2 + SNAKE_WIDTH/2)/MOVE_DISTANCE)
+max_x = round((WINDOW_WIDTH/2 - SNAKE_WIDTH/2)/MOVE_DISTANCE)
+min_y = round((-WINDOW_HEIGHT/2 + SNAKE_WIDTH/2)/MOVE_DISTANCE)
+max_y = round((WINDOW_HEIGHT/2 - SNAKE_WIDTH/2)/MOVE_DISTANCE)
+
+# Walls
+wall_x_min = min_x*MOVE_DISTANCE
+wall_x_max = max_x*MOVE_DISTANCE
+wall_y_min = min_y*MOVE_DISTANCE
+wall_y_max = max_y*MOVE_DISTANCE
