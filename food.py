@@ -1,6 +1,6 @@
 from turtle import Turtle
 from random import randint
-from settings import min_x,max_x,min_y,max_y,MOVE_DISTANCE
+from settings import wall_x_max,wall_x_min,wall_y_max,wall_y_min
 
 class Food(Turtle):
     def __init__(self):
@@ -14,8 +14,8 @@ class Food(Turtle):
         
     def change_pos(self):
         self.penup()
-        random_x = randint(min_x,max_x)*MOVE_DISTANCE
-        random_y = randint(min_y,max_y)*MOVE_DISTANCE
+        random_x = randint(wall_x_min,wall_x_max)
+        random_y = randint(wall_y_min,wall_y_max)
         x_y = (random_x,random_y)
         self.goto(x_y)
         self.pendown()
